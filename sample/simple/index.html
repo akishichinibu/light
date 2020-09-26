@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <title>Clock</title>
+    <meta name='keywords' content=''>
+    <meta name='description' content=''>
+</head>
+
+<body>
+    <div xid="clock">
+        <span>Current Time:&nbsp;</span><span xmember="datetime"></span>
+    </div>
+    <div xid="boy">
+        <span>Timestamp:&nbsp;</span><span xmember="timestamp"></span>
+        <span>Timestamp mod 17 is:&nbsp;</span><span xmember="result"></span>
+    </div>
+    <div xid="selector">
+        <div>
+            <select xmember="ulist"></select>
+        </div>
+    </div>
+</body>
+
+<script src="../../dist/light.bundle.js"></script>
+<script src="./index.ts"></script>
+
+<script>
+    kernel.Demo.run();
+</script>
+
+</html>

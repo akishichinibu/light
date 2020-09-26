@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <title>Clock</title>
+    <meta name='keywords' content=''>
+    <meta name='description' content=''>
+</head>
+
+<body>
+    <div xid="input">
+        <span>Period:&nbsp;</span><input xmember="during" value="1000"/>
+    </div>
+    <div xid="clock">
+        <span>Current Time:&nbsp;</span><span xmember="datetime"></span>
+    </div>
+    <div xid="boy">
+        <span>Timestamp:&nbsp;</span><span xmember="timestamp"></span>
+        <span>Timestamp mod 17 is:&nbsp;</span><span xmember="result"></span>
+    </div>
+    <div xid="selector">
+        <div>
+            <select xmember="ulist"></select>
+        </div>
+    </div>
+    <div xid="show">
+        <span xmember="a"></span>x<span xmember="b"></span>=<span xmember="c"></span>
+    </div>
+</body>
+
+<script src="./index.js"></script>
+
+<script>
+    kernel.Demo.run();
+</script>
+
+</html>
